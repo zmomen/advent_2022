@@ -2,7 +2,7 @@ import os
 
 
 def part2():
-    with open(os.getcwd() + '/input/adventofcode.com_2022_day_5_input.txt', 'r') as file:
+    with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_5_input.txt', 'r') as file:
         read_stacks = 0
         st = []
         for i in range(9):
@@ -45,7 +45,7 @@ def part2():
 
 
 def part1():
-    with open(os.getcwd() + '/input/adventofcode.com_2022_day_5_input.txt', 'r') as file:
+    with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_5_input.txt', 'r') as file:
         read_stacks = 0
         st = []
         for i in range(9):

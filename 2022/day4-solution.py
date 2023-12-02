@@ -1,7 +1,7 @@
 import os
 
 def func():
-    with open(os.getcwd() + '/input/adventofcode.com_2022_day_4_input.txt', 'r') as file:
+    with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_4_input.txt', 'r') as file:
         dups = 0
         dups2 = 0
         for line in file:

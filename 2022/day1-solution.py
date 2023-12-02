@@ -1,6 +1,6 @@
 import os 
 
-with open(os.getcwd() + '/input/adventofcode.com_2022_day_1_input.txt', 'r') as file:
+with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_1_input.txt', 'r') as file:
     ll = []
     ll.append(0)
     for line in file:

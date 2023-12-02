@@ -2,7 +2,7 @@ import os
 
 
 def func(marker):
-    with open(os.getcwd() + '/input/adventofcode.com_2022_day_6_input.txt', 'r') as file:
+    with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_6_input.txt', 'r') as file:
         res = file.read().strip()
         seeker = 0
         while seeker+marker < len(res):

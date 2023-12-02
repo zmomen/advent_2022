@@ -3,8 +3,8 @@ import os
 
 def main():
     print("Advent of Code - Day 7")
-    file_task_1 = open(os.getcwd() + '/input/adventofcode.com_2022_day_7_input.txt', 'r') 
-    file_task_2 = open(os.getcwd() + '/input/adventofcode.com_2022_day_7_input.txt', 'r') 
+    file_task_1 = open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_7_input.txt', 'r') 
+    file_task_2 = open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_7_input.txt', 'r') 
     task_1(file_task_1)
     task_2(file_task_2)
 
@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
 
 # def create_dict():
-#     with open(os.getcwd() + '/input/adventofcode.com_2022_day_7_input.txt', 'r') as file:
+#     with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_7_input.txt', 'r') as file:
 #         curpath = []
 #         dc = {}
 #         while True:

@@ -2,7 +2,7 @@ import os
 import string
 
 def part1():
-    with open(os.getcwd() + '/input/adventofcode.com_2022_day_3_input.txt', 'r') as file:
+    with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_3_input.txt', 'r') as file:
         strings = str(string.ascii_lowercase) + str(string.ascii_uppercase)
         sum_priorities = 0
         for line in file:
@@ -21,7 +21,7 @@ def part1():
 
 
 def part2():
-    with open(os.getcwd() + '/input/adventofcode.com_2022_day_3_input.txt', 'r') as file:
+    with open(os.getcwd() + '/2022/input/adventofcode.com_2022_day_3_input.txt', 'r') as file:
         strings = str(string.ascii_lowercase) + str(string.ascii_uppercase)
         groups_of_three_arr = []
         groups_of_three_counter = 0
