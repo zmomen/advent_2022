@@ -2,7 +2,7 @@ import os
 
 
 def read():
-    return open(os.getcwd() + '/2023/input/in_d1p1.txt', 'r')
+    return open(os.getcwd() + '/2023/input/in_d1.txt', 'r')
 
 
 def solve(part):
