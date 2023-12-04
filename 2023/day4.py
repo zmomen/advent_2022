@@ -1,7 +1,4 @@
 import os
-import re
-
-# DOES NOT WORK! DOES NOT WORK!
 
 
 def read():
@@ -48,7 +45,7 @@ def solve(input_arr, part):
 
     if part == 1:
         return allTotal
-    else: # part 2
+    else:  # part 2
         cur = 0
         while cur < len(queue):
             queue.extend(jumper[queue[cur]])
