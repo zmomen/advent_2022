@@ -1,9 +1,4 @@
-import os
-
-
-def read():
-    with open(os.getcwd() + '/2023/input/in_d4.txt', 'r') as file:
-        return [line.strip() for line in file]
+from utils import read_into_list
 
 
 def solve(input_arr, part):
@@ -54,6 +49,6 @@ def solve(input_arr, part):
 
 
 if __name__ == '__main__':
-    text_arr = read()
+    text_arr = read_into_list('in_d4.txt')
     print(solve(text_arr, 1))
     print(solve(text_arr, 2))

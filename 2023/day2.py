@@ -1,9 +1,4 @@
-import os
-
-
-def read():
-    return open(os.getcwd() + '/2023/input/in_d2.txt', 'r')
-
+from utils import read_into_list
 
 def solve(textfile, part):
     part2_totals = 0    
@@ -40,7 +35,7 @@ def solve(textfile, part):
 
 
 if __name__ == '__main__':
-    textfile = read()
+    textfile = read_into_list('in_d2.txt')
     # print(solve(textfile, 1))
     print(solve(textfile, 2))
 

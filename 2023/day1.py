@@ -1,12 +1,8 @@
-import os
-
-
-def read():
-    return open(os.getcwd() + '/2023/input/in_d1.txt', 'r')
+from utils import read_into_list
 
 
 def solve(part):
-    lines = read()
+    lines = read_into_list('in_d1.txt')
     totaler = 0
     for line in lines:
         if part == 2:
