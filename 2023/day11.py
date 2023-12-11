@@ -8,7 +8,7 @@ def manhattan_distance(position1, position2):
 
 
 def solve(input_arr, part):
-    larger_by = 10
+    larger_by = 1000_000
     spaces = []
     empty_rows = []
     empty_cols = []
@@ -39,8 +39,8 @@ def solve(input_arr, part):
                 row.insert(good_col+j, '.')
             j += 1
 
-    print("rows", empty_rows)
-    print("cols", empty_cols)
+    # print("rows", empty_rows)
+    # print("cols", empty_cols)
 
     glx = []
     for i in range(len(spaces)):
@@ -52,24 +52,22 @@ def solve(input_arr, part):
         for j in range(i + 1, len(glx)):
             position1 = glx[i]
             position2 = glx[j]
-
+            distance = 0
             if part == 2:
-                # DOES NOT WORK. 
                 for emp in empty_rows:
                     if emp > min(position1[0], position2[0]) and emp < max(position1[0], position2[0]):
-                        position2[0] = position2[0] + larger_by - 1
+                        distance = distance + larger_by - 1
                 
                 for emp in empty_cols:
                     if emp > min(position1[1], position2[1]) and emp < max(position1[1], position2[1]):
-                        position2[1] += larger_by - 1
+                        distance = distance + larger_by - 1
                 
-            distance = manhattan_distance(position1, position2)
-            print(f"Distance between {position1} and {position2}: {distance}")
+            distance += manhattan_distance(position1, position2)
             sums += distance
     return sums
 
 
 if __name__ == '__main__':
     text_arr = read_into_list('in_d11.txt')
-    # print(solve(text_arr, 1))
+    print(solve(text_arr, 1))
     print(solve(text_arr, 2))
